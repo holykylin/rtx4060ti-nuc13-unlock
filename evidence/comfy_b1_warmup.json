@@ -1,0 +1,16 @@
+﻿{
+    "tag":  "b1_warmup",
+    "when":  "2026-10-28 17:42:34",
+    "status":  "success",
+    "wall_seconds":  49.1,
+    "executed":  "",
+    "s_per_it_last":  null,
+    "s_per_it_median":  null,
+    "quantization":  false,
+    "staged_mb":  "",
+    "power_max_w":  157.76,
+    "power_median_w":  156.21,
+    "util_max_pct":  100,
+    "util_median_pct":  100,
+    "samples":  23
+}

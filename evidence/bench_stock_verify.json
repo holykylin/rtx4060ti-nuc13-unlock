@@ -1,0 +1,58 @@
+﻿{
+  "when": "2026-10-28T17:43:31+0800",
+  "host": "NUC13RNGi9",
+  "python": "3.13.12",
+  "torch": "2.12.1+cu130",
+  "cuda": "13.0",
+  "device": "NVIDIA GeForce RTX 4060 Ti",
+  "sm": [
+    8,
+    9
+  ],
+  "sms": 34,
+  "smi_before": "617.42, 95.06.25.00.d4, 00000000:01:00.0, 0x280510DE, 0x89211043, 16380 MiB, 165.00 W, 45, 210 MHz, 26.24 W, 11 %",
+  "correctness": {
+    "n": 512,
+    "max_rel_err": 0.0003151874328171803,
+    "ok": true
+  },
+  "modes": {
+    "fp32_control_4096": {
+      "median_ms": 11.0592,
+      "tflops": 12.428,
+      "min_ms": 10.6639,
+      "max_ms": 11.9767,
+      "samples": 10
+    },
+    "fp16_fp32acc_4096": {
+      "median_ms": 3.8625,
+      "tflops": 35.583,
+      "min_ms": 3.5685,
+      "max_ms": 3.9137,
+      "samples": 10
+    },
+    "fp16_fp32acc_8192": {
+      "median_ms": 24.0886,
+      "tflops": 45.645,
+      "min_ms": 23.8326,
+      "max_ms": 24.1961,
+      "samples": 10
+    },
+    "bf16_fp32acc_4096": {
+      "median_ms": 2.9614,
+      "tflops": 46.41,
+      "min_ms": 2.9479,
+      "max_ms": 3.2767,
+      "samples": 10
+    },
+    "bf16_fp32acc_8192": {
+      "median_ms": 24.9673,
+      "tflops": 44.038,
+      "min_ms": 24.6835,
+      "max_ms": 25.0409,
+      "samples": 10
+    }
+  },
+  "smi_after": "66, 2775 MHz, 98.28 W, 3105 MHz, 182.00 W",
+  "script_sha256": "af8366eee31851e80c654f1592ea34faa1a283e32fc0ef8f346103e8ed9938c6"
+}

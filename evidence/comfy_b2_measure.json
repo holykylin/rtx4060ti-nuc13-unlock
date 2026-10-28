@@ -1,0 +1,16 @@
+﻿{
+    "tag":  "b2_measure",
+    "when":  "2026-10-28 17:43:17",
+    "status":  "success",
+    "wall_seconds":  42.9,
+    "executed":  "",
+    "s_per_it_last":  null,
+    "s_per_it_median":  null,
+    "quantization":  false,
+    "staged_mb":  "",
+    "power_max_w":  156.1,
+    "power_median_w":  154.94,
+    "util_max_pct":  100,
+    "util_median_pct":  100,
+    "samples":  20
+}

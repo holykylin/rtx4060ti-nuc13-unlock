@@ -1,0 +1,15 @@
+# no NVIDIA firmware or derived payloads, ever
+*.bin
+*.efi
+*.EFI
+inputs/
+usbroot/
+local/
+
+# python
+__pycache__/
+*.pyc
+
+# windows
+Thumbs.db
+desktop.ini

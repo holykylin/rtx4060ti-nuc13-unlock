@@ -1,0 +1,63 @@
+﻿{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "QW21\\redqw21UNLOCKEDREDGPTK2tAE_redqw21UNLOCKEDV1T2I_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_nvfp4.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": ["2", 0],
+      "prompt": "A photorealistic still life photograph of a ripe red apple and a green pear on a rustic wooden table, soft window light from the left, natural shadows, neutral beige background, 50mm lens, crisp skin texture, editorial food photography.",
+      "negative_prompt": "",
+      "resolution": 1024,
+      "vae": ["3", 0]
+    }
+  },
+  "5": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": ["1", 0],
+      "seed": 210921,
+      "steps": 12,
+      "cfg": 3.5,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": ["4", 0],
+      "negative": ["4", 1],
+      "latent_image": ["4", 2],
+      "denoise": 1.0
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["5", 0],
+      "vae": ["3", 0]
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": ["6", 0],
+      "filename_prefix": "unlock_ab_qw21"
+    }
+  }
+}
+

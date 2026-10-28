@@ -1,0 +1,41 @@
+﻿{
+    "workflow":  "QW21 redqw21..._v1T2I_bf16 (13.25GB, bf16, unquantized) + qwen3vl_8b_nvfp4 TE + qwen_image_2.1_vae; 1024x1024, 12 steps, euler/simple, cfg 3.5",
+    "metric":  "tqdm s/it from server log (sampling only) + wall clock + nvidia-smi",
+    "unlocked":  {
+                     "s_per_it":  [
+                                      2.13,
+                                      2.17,
+                                      2.15
+                                  ],
+                     "median_s_it":  2.16,
+                     "wall_s":  [
+                                    32.8,
+                                    28.6,
+                                    28.6
+                                ],
+                     "power_w":  164,
+                     "util":  100,
+                     "gemm_fp16_8192":  75.2
+                 },
+    "stock":  {
+                  "s_per_it":  [
+                                   3.39,
+                                   3.4
+                               ],
+                  "median_s_it":  3.395,
+                  "wall_s":  [
+                                 49.1,
+                                 42.9
+                             ],
+                  "power_w":  155,
+                  "util":  100,
+                  "gemm_fp16_8192":  45.65
+              },
+    "speedup_sampling":  1.572,
+    "sampling_12steps_s":  {
+                               "stock":  40.7,
+                               "unlocked":  25.9
+                           },
+    "note":  "wall-clock differs by more than sampling because the two runs used different server instances (model load/offload state); s/it is the fair comparison",
+    "when":  "2026-10-28 17:43:46"
+}

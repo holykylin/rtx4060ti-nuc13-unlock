@@ -1,0 +1,16 @@
+﻿{
+    "tag":  "a2_measure",
+    "when":  "2026-10-28 17:22:11",
+    "status":  "success",
+    "wall_seconds":  28.6,
+    "executed":  "27",
+    "s_per_it_last":  2.15,
+    "s_per_it_median":  2.17,
+    "quantization":  false,
+    "staged_mb":  "644",
+    "power_max_w":  164.49,
+    "power_median_w":  164.02,
+    "util_max_pct":  100,
+    "util_median_pct":  100,
+    "samples":  13
+}
