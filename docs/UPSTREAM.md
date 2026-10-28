@@ -99,7 +99,16 @@ docs/evidence/ad106-2805-nuc13/
 
 ### 补丁已经做好了
 
-基于上游 `main` @ `51bc8b4` 生成了一个补丁（`git apply --check` 通过），放在本仓库同级的
+**当前状态（2026-10-28）**
+
+| 项 | 链接 |
+| --- | --- |
+| 上游 Issue | [physicsdolphin/nv-uefi-unlocker#30](https://github.com/physicsdolphin/nv-uefi-unlocker/issues/30) |
+| PR 分支（fork） | [`holykylin:report/ad106-2805-nuc13`](https://github.com/holykylin/nv-uefi-unlocker/tree/report/ad106-2805-nuc13) @ `e487e51` |
+| 开 PR 的 compare 页面 | [compare/main...holykylin:report/ad106-2805-nuc13](https://github.com/physicsdolphin/nv-uefi-unlocker/compare/main...holykylin:report/ad106-2805-nuc13?expand=1) |
+
+改动 3 个文件、+439/−2：`README.md` 矩阵一行，加 `docs/evidence/ad106-2805-nuc13/{report.md,loader-unlock.log}`。
+基于上游 `main` @ `51bc8b4` 生成（`git apply --check` 通过），原始补丁与 Issue/PR 文案在
 `../upstream-patch/`：
 
 | 文件 | 用途 |
